@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We would love to hear your thoughts and feedback!</p>
+
+    <form id="survey-form">
+      <!-- Name Input -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <!-- Email Input -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <!-- Number Input -->
+      <div class="form-group">
+        <label id="number-label" for="number">Age:</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          placeholder="Enter your age"
+          min="10"
+          max="100"
+          required
+        />
+      </div>
+
+      <!-- Dropdown Input -->
+      <div class="form-group">
+        <label for="dropdown">Which option best describes you?</label>
+        <select id="dropdown" name="role" required>
+          <option value="">Select an option</option>
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+        </select>
+      </div>
+
+      <!-- Radio Buttons -->
+      <div class="form-group">
+        <p>Would you recommend this survey?</p>
+        <label>
+          <input type="radio" name="recommend" value="yes" required> Yes
+        </label>
+        <label>
+          <input type="radio" name="recommend" value="no"> No
+        </label>
+      </div>
+
+      <!-- Checkbox Group -->
+      <div class="form-group">
+        <p>What topics are you interested in? (Select all that apply)</p>
+        <label>
+          <input type="checkbox" name="interest" value="technology"> Technology
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="sports"> Sports
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="art"> Art
+        </label>
+      </div>
+
+      <!-- Textarea Input -->
+      <div class="form-group">
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
